@@ -1,16 +1,17 @@
 
-# Simple Telecom Billing Application
+def calculate_bill(monthly_charge, call_charges, data_charges):
+    return monthly_charge + call_charges + data_charges
 
-customer_name = "John"
-monthly_charge = 30
-call_charges = 15
-data_charges = 10
 
-total_bill = monthly_charge + call_charges + data_charges
+def display_bill(customer_name, monthly_charge, call_charges, data_charges):
+    total = calculate_bill(monthly_charge, call_charges, data_charges)
 
-print("Telecom Billing System")
-print("Customer:", customer_name)
-print("Monthly Charge: £", monthly_charge)
-print("Call Charges: £", call_charges)
-print("Data Charges: £", data_charges)
-print("Total Bill: £", total_bill)
+    print("Telecom Billing System")
+    print("Customer:", customer_name)
+    print("Monthly Charge: £", monthly_charge)
+    print("Call Charges: £", call_charges)
+    print("Data Charges: £", data_charges)
+    print("Total Bill: £", total)
+
+
+display_bill("John", 30, 15, 10)
