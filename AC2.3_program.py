@@ -13,6 +13,9 @@ monthly_charge = 30
 call_charge = 10
 data_charge = 15
 
+# Just added this for eidt commit test
+Test = 123
+
 total_bill = calculate_bill(monthly_charge, call_charge, data_charge)
 display_bill(customer_name, total_bill)
 
