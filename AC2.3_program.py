@@ -7,6 +7,11 @@ def display_bill(customer_name, total_bill):
     print("Customer:", customer_name)
     print("Total Bill: £", total_bill)
 
+# Function to greet the user
+def greet_user(name):
+    print(f"Hello {name}, welcome to Python!")
+
+greet_user("Student")
 
 customer_name = "John"
 monthly_charge = 30
