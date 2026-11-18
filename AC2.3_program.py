@@ -24,3 +24,10 @@ Test = 123
 total_bill = calculate_bill(monthly_charge, call_charge, data_charge)
 display_bill(customer_name, total_bill)
 
+# Function to calculate total bill
+def calculate_total(price, quantity):
+    return price * quantity
+
+total = calculate_total(100, 3)
+print(f"Total bill: £{total}")
+
